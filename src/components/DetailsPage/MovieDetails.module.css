@@ -1,0 +1,27 @@
+.backButton {
+  margin-bottom: 15px;
+}
+.about {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  box-shadow: 0px 8px 6px 0px rgba(136,136,136,0.4);
+
+}
+.info {
+  display: block;
+  margin-left: 20px;
+}
+.infoItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+.aditional {
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    box-shadow: 0px 8px 6px 0px rgba(136,136,136,0.4);
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
