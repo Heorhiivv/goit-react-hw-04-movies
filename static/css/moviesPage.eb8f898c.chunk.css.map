@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Spinner/Spinner.module.css"],"names":[],"mappings":"AAAA,wBACE,YAAa,CACb,sBAAuB,CACvB,WACF","file":"moviesPage.eb8f898c.chunk.css","sourcesContent":[".spinner {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 15px;\r\n}"]}
