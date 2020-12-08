@@ -1,7 +1,7 @@
 import React, {Component} from "react"
-import databaseApi from "../../services/databaseApi"
-import Spinner from "../Spinner/Spinner"
-import Cast from "../Cast/Cast"
+import databaseApi from "../services/databaseApi"
+import Spinner from "../components/Spinner/Spinner"
+import Cast from "../components/Cast/Cast"
 
 class CastPage extends Component {
   state = {

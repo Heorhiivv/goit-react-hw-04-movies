@@ -1,9 +1,10 @@
 const baseURL = 'https://api.themoviedb.org/3';
+
 const key = 'c19c5b12e1a277621ccd20a2c2d3142a';
+// ${baseURL}/trending/movie/week?api_key=${key}
 
-
-const fetchTrandingMovies = () => {
-  return fetch(`${baseURL}/trending/movie/week?api_key=${key}`)
+const fetchTrandingMovies = (url) => {
+  return fetch(url + 'api_key='+ key)
   .then(res=> res.json());
 }
 const fetchMovieDetails = movieId =>  {

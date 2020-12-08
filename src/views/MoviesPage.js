@@ -1,9 +1,11 @@
 import React, {Component} from "react"
 import {Link} from "react-router-dom"
-import getQueryParams from "../../utils/get-query-params"
-import Searchbox from "../SearchForm/Searchbox"
-import databaseApi from "../../services/databaseApi"
-import Spinner from "../Spinner/Spinner"
+import getQueryParams from "../utils/get-query-params"
+import Searchbox from "../components/SearchForm/Searchbox"
+import databaseApi from "../services/databaseApi"
+import Spinner from "../components/Spinner/Spinner";
+import withLog from '../components/hocs/withLog';
+
 
 class MoviesPage extends Component {
   state = {
@@ -70,4 +72,4 @@ class MoviesPage extends Component {
   }
 }
 
-export default MoviesPage
+export default withLog(MoviesPage)

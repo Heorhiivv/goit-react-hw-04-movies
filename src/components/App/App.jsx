@@ -3,9 +3,9 @@ import { Route, Switch } from 'react-router-dom';
 import Layout from '../Layout/Layout';
 import routes from '../../routes';
 
-const MovieDetailsPage = lazy(() => import('../views/MovieDetailsPage' /*webpackChunkName: "movieDetailsPage"*/));
-const MoviesPage = lazy(() => import ('../views/MoviesPage' /*webpackChunkName: "moviesPage"*/ ));
-const HomePage = lazy(() => import ('../views/HomePage' /*webpackChunkName: "HomePage"*/));
+const MovieDetailsPage = lazy(() => import('../../views/MovieDetailsPage' /*webpackChunkName: "movieDetailsPage"*/));
+const MoviesPage = lazy(() => import ('../../views/MoviesPage' /*webpackChunkName: "moviesPage"*/ ));
+const HomePage = lazy(() => import ('../../views/HomePage' /*webpackChunkName: "HomePage"*/));
 
 const App = () => (
  <Layout>

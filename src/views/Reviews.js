@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import databaseApi from "../../services/databaseApi";
-import Spinner from "../Spinner/Spinner";
-import Reviews from "../Reviews/Reviews";
+import databaseApi from "../services/databaseApi";
+import Spinner from "../components/Spinner/Spinner";
+import Reviews from "../components/Reviews/Reviews";
 
 class ReviewsPage extends Component {
   state = {

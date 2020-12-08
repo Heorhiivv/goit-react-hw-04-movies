@@ -1,19 +1,21 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
-import databaseApi from "../../services/databaseApi";
+import withFetch from '../components/hocs/withFetch';
 
 class HomePage extends Component {
-  state = {
-    trend: [],
-  }
+  // state = {
+  //   trend: [],
+  // }
 
-  componentDidMount() {
-    databaseApi.fetchTrandingMovies()
-    .then(data => this.setState({trend: data.results}))
-  }
+  // componentDidMount() {
+  //   databaseApi.fetchTrandingMovies()
+  //   .then(data => this.setState({trend: data.results}))
+  // }
 
   render() {
-    const {trend} = this.state
+
+    const{trend} = this.props
+    // const {trend} = this.state
     return (
       <>
           <h1> Trending today</h1>
@@ -31,4 +33,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage
+export default withFetch('https://api.themoviedb.org/3/trending/movie/week?')(HomePage)

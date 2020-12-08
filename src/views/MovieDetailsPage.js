@@ -1,14 +1,14 @@
 import React, {Component} from "react"
-import databaseApi from "../../services/databaseApi"
-import routes from "../../routes"
+import databaseApi from "../services/databaseApi"
+import routes from "../routes"
 
 import {Route, Link} from "react-router-dom"
 import CastPage from "../views/Cast"
 import ReviewsPage from "../views/Reviews"
 
-import css from "../DetailsPage/MovieDetails.module.css"
-import Spinner from "../Spinner/Spinner"
-import DetailsPage from "../DetailsPage/DetailsPage"
+import css from "../components/DetailsPage/MovieDetails.module.css"
+import Spinner from "../components/Spinner/Spinner"
+import DetailsPage from "../components/DetailsPage/DetailsPage"
 
 class MovieDetailsPage extends Component {
   state = {
